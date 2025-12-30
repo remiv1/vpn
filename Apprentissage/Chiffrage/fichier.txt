@@ -1,0 +1,4 @@
+Ceci est un message secret qui sera chiffré puis déchiffré.
+Bonjour, ceci est un test de chiffrement.
+Les données confidentielles doivent être protégées.
+1234567890 - Caractères spéciaux: !@#$%^&*()

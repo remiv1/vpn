@@ -2,29 +2,29 @@
 
 ## ⏳ Planning & Timing
 
-| Étape                        | Description                                      | Durée estimée |
-|------------------------------|--------------------------------------------------|---------------|
-| 1. Prise en main UDP         | Comprendre les sockets UDP en Python             | 0,5 jour      |
-| 2. Chiffrement symétrique    | Étudier AES/ChaCha20, clé partagée, libs Python  | 1 jour        |
-| 3. Tunnel logique            | Concevoir l'encapsulation/décapsulation          | 0,5 jour      |
-| 4. Développement Serveur     | Implémenter serveur UDP + déchiffrement          | 1 jour        |
-| 5. Développement Client      | Implémenter client UDP + chiffrement             | 1 jour        |
-| 6. Logs & CLI                | Ajouter logs, interface ligne de commande        | 0,5 jour      |
-| 7. Tests & Démo              | Tester, démontrer, corriger                      | 0,5 jour      |
-| 8. Documentation             | Rédiger docs, schémas, explications              | 0,5 jour      |
+| Étape                        | Description                                      | Durée estimée | Fait |
+|------------------------------|--------------------------------------------------|---------------|------|
+| Prise en main UDP            | Comprendre les sockets UDP en Python             | 0,5 jour      |  X   |
+| Chiffrement symétrique       | Étudier AES/ChaCha20, clé partagée, libs Python  | 1 jour        |  X   |
+| Tunnel logique               | Concevoir l'encapsulation/décapsulation          | 0,5 jour      |      |
+| Développement Serveur        | Implémenter serveur UDP + déchiffrement          | 1 jour        |  X   |
+| Développement Client         | Implémenter client UDP + chiffrement             | 1 jour        |  X   |
+| Tests & Démo                 | Tester, démontrer, corriger                      | 0,5 jour      |      |
+| Logs & CLI                   | Ajouter logs, interface ligne de commande        | 0,5 jour      |      |
+| Documentation                | Rédiger docs, schémas, explications              | 0,5 jour      |      |
 
 > **Total estimé : 5,5 jours**
 
 ## 📚 Connaissances à développer
 
-- Sockets UDP en Python (envoi/réception, non connecté)
-- Chiffrement symétrique (AES ou ChaCha20, modes, padding)
-- Gestion de clés partagées (génération, stockage sécurisé)
-- Encapsulation/décapsulation de messages
-- Structure d’un tunnel réseau logique
-- Logging et bonnes pratiques CLI
-- Tests unitaires et manuels
-- Documentation technique claire
+- [X] Sockets UDP en Python (envoi/réception, non connecté)
+- [X] Chiffrement symétrique (AES ou ChaCha20, modes, padding)
+- [X] Gestion de clés partagées (génération, stockage sécurisé)
+- [ ] Encapsulation/décapsulation de messages
+- [ ] Structure d’un tunnel réseau logique
+- [ ] Logging et bonnes pratiques CLI
+- [ ] Tests unitaires et manuels
+- [ ] Documentation technique claire
 
 ## 🛠️ Compétences à acquérir
 
