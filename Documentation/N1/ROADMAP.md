@@ -6,7 +6,7 @@
 |------------------------------|--------------------------------------------------|---------------|------|
 | Prise en main UDP            | Comprendre les sockets UDP en Python             | 0,5 jour      |  X   |
 | Chiffrement symétrique       | Étudier AES/ChaCha20, clé partagée, libs Python  | 1 jour        |  X   |
-| Tunnel logique               | Concevoir l'encapsulation/décapsulation          | 0,5 jour      |      |
+| Tunnel logique               | Concevoir l'encapsulation/décapsulation          | 0,5 jour      |  X   |
 | Développement Serveur        | Implémenter serveur UDP + déchiffrement          | 1 jour        |  X   |
 | Développement Client         | Implémenter client UDP + chiffrement             | 1 jour        |  X   |
 | Tests & Démo                 | Tester, démontrer, corriger                      | 0,5 jour      |      |
@@ -20,8 +20,8 @@
 - [X] Sockets UDP en Python (envoi/réception, non connecté)
 - [X] Chiffrement symétrique (AES ou ChaCha20, modes, padding)
 - [X] Gestion de clés partagées (génération, stockage sécurisé)
-- [ ] Encapsulation/décapsulation de messages
-- [ ] Structure d’un tunnel réseau logique
+- [X] Encapsulation/décapsulation de messages
+- [X] Structure d’un tunnel réseau logique
 - [ ] Logging et bonnes pratiques CLI
 - [ ] Tests unitaires et manuels
 - [ ] Documentation technique claire
