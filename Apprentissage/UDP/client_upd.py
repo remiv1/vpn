@@ -1,5 +1,5 @@
 '''
-Module serveur UDP simple en Python - Côté client
+Module client UDP simple en Python - Côté client
 '''
 
 import socket
