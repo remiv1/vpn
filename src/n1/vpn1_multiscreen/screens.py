@@ -1,6 +1,6 @@
 """Module des écrans pour l'application VPN1 à écrans multiples."""
 from typing import TYPE_CHECKING, Any
-#from datetime import datetime
+from datetime import datetime
 from textual.app import ComposeResult
 from textual.screen import Screen
 from textual.widgets import Header, Footer, Input, Button, Static, Log, ListView
@@ -116,7 +116,7 @@ class ChatScreen(Screen[None]):
 
             # Affichage local
             messages_view = self.query_one("#messages", ListView)
-            messages_view.append(SentMessage(text))
+            messages_view.append(SentMessage(f"[{datetime.now().time()}] {text}"))
 
             # Envoi réseau
             self.call_later(self.send_message, text)
@@ -143,4 +143,4 @@ class ChatScreen(Screen[None]):
         message: str = plaintext.decode()
 
         messages = self.query_one("#messages", ListView)
-        messages.append(ReceivedMessage(message))
+        messages.append(ReceivedMessage(f"[{datetime.now().time()}] {message}"))
