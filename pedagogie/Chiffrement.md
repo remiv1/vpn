@@ -64,7 +64,7 @@
         iv = get_random_bytes(16)   # 128 bits pour AES
 
         # Chiffrement
-        cipher: str = AES.new(key, AES.MODE_GCM, iv)
+        cipher = AES.new(key, AES.MODE_GCM, iv)
         message = b"Message secret a chiffrer"
         ciphertext, tag = cipher.encrypt_and_digest(message)
         print(f"Chiffré : {ciphertext.hex()}")
