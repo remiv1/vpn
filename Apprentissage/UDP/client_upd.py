@@ -9,7 +9,7 @@ import time
 sock = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 
 # Génération du message à envoyer
-MESSAGE = "Ici commence l'apprentissage d'UDP en Python."
+MESSAGE = input("Entrez le message à envoyer au serveur UDP: ")
 
 # Envoi du message au serveur avec gestion du timeout et renvois
 sock.settimeout(2)  # Timeout de 2 secondes
@@ -20,7 +20,7 @@ recu: bool = False
 
 while retry < MAX_RETRY and not recu:
     try:
-        sock.sendto(MESSAGE.encode(), ("127.0.0.1", 12345))
+        sock.sendto(MESSAGE.encode(), ("192.168.1.137", 12345))
         reponse, adresse_retour = sock.recvfrom(1024)
         resp: str = reponse.decode()
         ad = adresse_retour[0]

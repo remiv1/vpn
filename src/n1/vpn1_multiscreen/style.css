@@ -1,0 +1,28 @@
+#label {
+    padding: 1;
+}
+
+#input {
+    border: round #00b9c6;
+    width: 80%;
+}
+
+#output {
+    border: round #11ff00;
+    padding: 1;
+    height: 5;
+    width: 80%;
+    margin-top: 1;
+}
+
+.sent {
+    text-align: left;
+    padding: 1;
+    width: 100%;
+}
+
+.received {
+    text-align: right;
+    padding: 1;
+    width: 100%;
+}
