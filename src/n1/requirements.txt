@@ -1,4 +1,4 @@
 textual==7.3.0
 pycryptodome==3.23.0
 cryptography==46.0.3
-assyncio==4.0.0
+asyncio==4.0.0
