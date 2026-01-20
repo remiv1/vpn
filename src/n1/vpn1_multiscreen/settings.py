@@ -23,7 +23,7 @@ class Settings:
         self.remote_ip = remote_ip
         self.port = port
         with open("settings.json", "w", encoding="utf-8") as f:
-            f.write(f'{{"local_ip": "{local_ip}", "remote_ip": "{remote_ip}", "port": {port}}}')
+            json.dump({"local_ip": local_ip, "remote_ip": remote_ip, "port": port}, f)
 
     def load(self) -> 'Settings':
         """Charge les paramètres depuis le fichier JSON."""
