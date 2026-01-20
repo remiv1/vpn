@@ -34,19 +34,6 @@ class MiniVPNApp(App[None]):
             self.settings.remote_ip = ""
             self.settings.port = 0
 
-    def save_settings(self, local_ip: str, remote_ip: str, port: int) -> None:
-        """Sauvegarde les paramètres dans le fichier JSON."""
-        data: Dict[str, Any] = {
-            "local_ip": local_ip,
-            "remote_ip": remote_ip,
-            "port": port,
-        }
-        with open(SETTINGS_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4)
-        self.settings.local_ip = data.get("local_ip", "")
-        self.settings.remote_ip = data.get("remote_ip", "")
-        self.settings.port = int(data.get("port", 0))
-
     def on_mount(self) -> None:
         """
         Actions à effectuer lors du montage de l'application.
