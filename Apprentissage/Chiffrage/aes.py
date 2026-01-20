@@ -9,7 +9,7 @@ key = get_random_bytes(32)  # 256 bits
 iv = get_random_bytes(16)   # 128 bits pour AES
 
 # Chiffrement
-cipher: str = AES.new(key=key, mode=AES.MODE_GCM, nonce=iv)    # type: ignore
+cipher = AES.new(key=key, mode=AES.MODE_GCM, nonce=iv)    # type: ignore
 MESSAGE = b"Message secret a chiffrer"
 ciphertext, tag = cipher.encrypt_and_digest(MESSAGE)    # type: ignore
 print(f"Chiffré : {ciphertext.hex()}")  # type: ignore
