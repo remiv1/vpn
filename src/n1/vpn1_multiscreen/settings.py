@@ -9,11 +9,13 @@ class Settings:
     local_ip: str
     remote_ip: str
     port: int
+    key: bytes
 
     def __init__(self, local_ip: str = "", remote_ip: str = "", port: int = 0):
         self.local_ip: str = local_ip
         self.remote_ip: str = remote_ip
         self.port: int = port
+        self.key: bytes = b"0123456789ABCDEF0123456789ABCDEF"  # Clé fixe pour ChaCha20-Poly1305
 
     def save(self, local_ip: str, remote_ip: str, port: int) -> None:
         """Met à jour les paramètres."""

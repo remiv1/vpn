@@ -8,6 +8,8 @@ from typing import Any, Dict
 
 def encapsulate(payload: bytes, tunnel_type: str="MINI-VPN"):
     """Encapsule les données dans un paquet JSON pour le tunnel VPN."""
+    if isinstance(tunnel_type, bytes):
+        tunnel_type = tunnel_type.hex()
     packet: Dict[str, Any] = {
         "type": tunnel_type,
         "length": len(payload),
