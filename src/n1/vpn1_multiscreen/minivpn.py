@@ -15,6 +15,12 @@ class MiniVPNApp(App[None]):
         "settings": SettingsScreen,
         "chat": ChatScreen,
     }
+    BINDINGS = [
+        ("ctrl+q", "quit", "Quitter"),
+        ("l", "goto_logs", "Aller aux logs"),
+        ("s", "goto_settings", "Aller aux paramètres"),
+        ("c", "goto_chat", "Aller au chat"),
+    ]
     settings: Settings = Settings()
 
     def __init__(self, **kwargs: Any):
@@ -46,6 +52,18 @@ class MiniVPNApp(App[None]):
             self.push_screen("settings")
         else:
             self.push_screen("chat")
+
+    def action_goto_logs(self) -> None:
+        """Navigue vers l'écran des logs."""
+        self.push_screen("logs")
+
+    def action_goto_settings(self) -> None:
+        """Navigue vers l'écran des paramètres."""
+        self.push_screen("settings")
+
+    def action_goto_chat(self) -> None:
+        """Navigue vers l'écran de chat."""
+        self.switch_screen("chat")
 
 if __name__ == "__main__":
     MiniVPNApp().run()
