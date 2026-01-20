@@ -7,7 +7,7 @@ import json
 from typing import Any, Dict
 
 def encapsulate(nonce: bytes, ciphertext: bytes, tunnel_type: str="MINI-VPN"):
-    """Encapsule les données dans un paquet JSON pour le tunnel VPN."""
+    """Encapsule le nonce et le ciphertext dans un paquet JSON pour le tunnel VPN."""
     if isinstance(tunnel_type, bytes):
         tunnel_type = tunnel_type.hex()
     packet: Dict[str, Any] = {

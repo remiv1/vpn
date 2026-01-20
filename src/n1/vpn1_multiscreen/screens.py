@@ -119,7 +119,7 @@ class ChatScreen(Screen[None]):
             messages_view.append(SentMessage(text))
 
             # Envoi réseau
-            self.call_later(self.send_message, text)
+            self.call_later(self.send_message(text))
 
     async def send_message(self, text: str):
         """Pipeline d'envoi : chiffrement → encapsulation → UDP."""
