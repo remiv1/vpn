@@ -9,9 +9,9 @@
 | Tunnel logique               | Concevoir l'encapsulation/décapsulation          | 0,5 jour      |  X   |
 | Développement Serveur        | Implémenter serveur UDP + déchiffrement          | 1 jour        |  X   |
 | Développement Client         | Implémenter client UDP + chiffrement             | 1 jour        |  X   |
-| Tests & Démo                 | Tester, démontrer, corriger                      | 0,5 jour      |      |
-| Logs & CLI                   | Ajouter logs, interface ligne de commande        | 0,5 jour      |      |
-| Documentation                | Rédiger docs, schémas, explications              | 0,5 jour      |      |
+| Tests & Démo                 | Tester, démontrer, corriger                      | 0,5 jour      |  X   |
+| Logs & CLI                   | Ajouter logs, interface ligne de commande        | 0,5 jour      |  X   |
+| Documentation                | Rédiger docs, schémas, explications              | 0,5 jour      |  X   |
 
 > **Total estimé : 5,5 jours**
 
@@ -22,9 +22,9 @@
 - [X] Gestion de clés partagées (génération, stockage sécurisé)
 - [X] Encapsulation/décapsulation de messages
 - [X] Structure d’un tunnel réseau logique
-- [ ] Logging et bonnes pratiques CLI
+- [X] Logging et bonnes pratiques CLI
 - [ ] Tests unitaires et manuels
-- [ ] Documentation technique claire
+- [X] Documentation technique claire
 
 ## 🛠️ Compétences à acquérir
 
